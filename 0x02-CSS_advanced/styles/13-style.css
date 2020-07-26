@@ -18,21 +18,21 @@ h6 {
     font-family: var(--font-family-title);
     font-weight: var(--font-weight-bold);
 }
-a > .href {
+a:link {
     color: var(--text-color);
     text-decoration: none;
 }
-a > .href > :visited {
+a:visited {
     color: var(--text-color);
     text-decoration: none;
     font-style: italic;
 }
-a > .href > :hover {
+a:hover {
     color: var(--text-color);
     text-decoration: underline;
     font-style: italic;
 }
-a > .href > :active {
+a:active {
     color: var(--text-color);
     text-decoration: underline;
     font-style: italic;
