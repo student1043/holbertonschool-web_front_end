@@ -78,9 +78,9 @@ a:active {
     float: right;
 }
 .nav {
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-    list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
     text-align: center;
 }
 .nav > .nav-item {
