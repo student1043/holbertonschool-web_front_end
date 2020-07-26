@@ -30,7 +30,7 @@ ul.row {
     padding: 0.5rem;
 }
 .row::after {
-    content: none;
+    content: "";
     display: table;
     clear: both;
 }
