@@ -59,7 +59,8 @@ a:active {
     font-weight: var(--font-weight-bold);
 }
 .container {
-    margin: 0 auto 0 0;
+    margin-left: auto;
+    margin-right: auto;
     width: 960px;
 }
 :root {
