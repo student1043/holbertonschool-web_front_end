@@ -84,6 +84,7 @@ a:active {
     text-transform: var(--section-tagline-transform);
     font-weight: var(--font-weight-bold);
     padding: var(--section-tagline-margin);
+    margin: var(--section-tagline-margin);
 }
 .container {
     margin-left: auto;
