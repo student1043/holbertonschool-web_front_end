@@ -176,11 +176,11 @@ a:active {
     background: var(--color-black);
 }
 .footer-address {
-    text-decoration-color: var(--text-color);
+    color: var(--text-color);
 }
 .social-link {
     display: block;
 }
-.social-link svg {
+.social-link > svg {
     fill: var(--text-color);
 }
