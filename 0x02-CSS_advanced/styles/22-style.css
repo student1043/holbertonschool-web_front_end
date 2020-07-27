@@ -170,6 +170,6 @@ a:active {
 .footer ul {
     text-align: right;
 }
-data-section-theme {
+[data-section-theme="dark"] {
     background-color: var(--color-black);
 }
