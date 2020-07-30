@@ -1,6 +1,6 @@
 /* Loop Col */
 @for $i from 1 through 4 {
-    $width: percentage(1 / $i);
+    $width: 100% / $i;
 
     .col-#{$i} {
         width: #{$width};
