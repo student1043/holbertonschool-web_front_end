@@ -23,19 +23,12 @@ a:link {
     text-decoration: none;
 }
 a:visited {
-    color: var(--text-color);
-    text-decoration: none;
     font-style: italic;
 }
 a:hover {
-    color: var(--text-color);
     text-decoration: underline;
-    font-style: italic;
 }
 a:active {
-    color: var(--text-color);
-    text-decoration: underline;
-    font-style: italic;
     background-color: var(--color-light-grey);
 }
 .visually-hidden {
