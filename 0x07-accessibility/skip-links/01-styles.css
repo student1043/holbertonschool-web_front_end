@@ -1,4 +1,3 @@
-
 /* SUMMARY
 1. GLOBAL
 2. LAYOUT
@@ -191,28 +190,28 @@
   }
 
   .off-screen {
-      left: -100vw;
-      position: absolute;
-  }
-
-  .skip-link {
-      background: var(--color-black);
-      color: var(--color-white);
-      left: 0;
-      padding: .7rem;
-      position: fixed;
-      opacity: 0;
-      top: 0;
-      z-index: 10;
-      transform: translateY(-1rem);
-      transition: transform .2s ease-in-out, opacity .2s ease-in-out;
-  }
-
-  .skip-link:focus {
-      opacity: 1;
-      transform: translateY(0);
+    left: -100vw;
+    position: absolute;
   }
   
+  .skip-link {
+    background: var(--color-black);
+    color: var(--color-white);
+    left: 0;
+    padding: .7rem;
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    z-index: 10;
+    transform: translateY(-1rem);
+    transition: transform .2s ease-in-out, opacity .2s ease-in-out;
+  }
+  
+  .skip-link:focus {
+    opacity: 1;
+    transform: translateY(0);
+  }  
+
   /*** 2. LAYOUT ***/
   
   /* Layout
@@ -679,7 +678,7 @@
     z-index: 1;
     transition: var(--transition-duration) var(--transition-cubic-bezier);
   }
-
+  
   .card-work .card-title {
     text-align: center;
     margin: 0;
@@ -689,9 +688,9 @@
   
   .card-work .card-title a {
     display: block;
-    opacity: 0;
     text-decoration: none;
     padding-top: 45%;
+    opacity: 0;
   }
   
   .card-work .card-title a::after {
@@ -701,6 +700,12 @@
     right: 0;
     bottom: 0;
     content: '';
+  }
+
+  .card-work .card-title a:focus, .card-work:hover .card-title a {
+    opacity: 1;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
   }
   
   @media only screen and (max-width: 767px) {
@@ -727,13 +732,6 @@
       transform: none;
     }
   }
-
-    .card-work .card-title a:focus,
-    .card-work:hover .card-title a {
-        opacity: 1;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
-    }
   
   /* Card SERVICES
       ============================= */
