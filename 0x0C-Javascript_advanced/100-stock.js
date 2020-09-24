@@ -1,5 +1,5 @@
 let stock = {
-    macbook: 2,
+    macbook: 0,
     iphone: 4
 }
 function processPayment(itemName) {
@@ -12,14 +12,14 @@ function processError(itemName) {
 }
 function processOrder(itemName, callbackPayment, callbackError) {
     console.log("Verifying the stock of",itemName);
-    if(itemName) {
-        callbackPayment();
+    if (stock[itemName] !== undefined && stock[itemName] > 0) {
+        callbackPayment(itemName);
     }
     else {
-        callbackError();
+        callbackError(itemName);
     }
 }
 console.log("Please enter the item you would like to purchase (Macbook, iPhone)");
 let name = window.prompt();
 name = name.toLowerCase();
-processError(name, processPayment(), processError());
+processOrder(name, processPayment, processError);
